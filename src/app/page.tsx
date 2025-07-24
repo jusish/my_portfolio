@@ -69,7 +69,7 @@ const Home = () => {
                 Get In Touch
               </Link>
               <a
-                href="https://yourdomain.com/JustinCV.pdf" // 🔁 Replace this with your real CV URL
+                href="https://jusish-portfolio.vercel.app/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 bg-transparent transition-all duration-300 border border-gray-600 text-gray-800 rounded-lg hover:bg-gray-800 hover:text-white flex gap-2 font-bold"

@@ -33,7 +33,8 @@ export const projectData: Project[] = [
       "JWT",
       "Swagger"
     ],
-    category: "backend"
+    category: "backend",
+    githubUrl: "https://github.com/jusish/car-parking-backend"
   },
   {
     id: "payroll-02",
@@ -52,7 +53,8 @@ export const projectData: Project[] = [
       "Spring Mail",
       "Swagger"
     ],
-    category: "backend"
+    category: "backend",
+    githubUrl: "https://github.com/jusish/Employee-Payroll-Management"
   },
   {
     id: "eucl-03",
@@ -64,7 +66,8 @@ export const projectData: Project[] = [
       src: "/videos/eucl-prepaid.mp4"
     },
     technologies: ["Java", "Spring Boot", "PostgreSQL", "JWT", "Swagger"],
-    category: "backend"
+    category: "backend",
+    githubUrl: "https://github.com/jusish/eucl"
   },
   {
     id: "reminderr-04",
@@ -73,9 +76,9 @@ export const projectData: Project[] = [
       "Schedules reminders with support for repeat patterns and sends notifications via email. Lightweight and easy to use.",
     media: {
       type: "video",
-      src: "/videos/reminderr.mp4"
+      src: "../../public/assets/videos/reminderr.mp4"
     },
-    githubUrl: "https://github.com/yourusername/reminderr",
+    githubUrl: "https://github.com/jusish/remindrr-backend",
     technologies: [
       "Node.js",
       "Express",
@@ -95,7 +98,7 @@ export const projectData: Project[] = [
       type: "video",
       src: "/videos/recipenest.mp4"
     },
-    githubUrl: "https://github.com/yourusername/recipenest-api",
+    githubUrl: "https://github.com/jusish/recipe-nestjs",
     technologies: [
       "NestJS",
       "TypeScript",
@@ -119,7 +122,8 @@ export const projectData: Project[] = [
     },
     liveUrl: "https://i-tasks-murex.vercel.app/",
     technologies: ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Zustand"],
-    category: "frontend"
+    category: "frontend",
+    githubUrl: "https://github.com/jusish/iTasks"
   },
   {
     id: "quizy-07",
@@ -138,7 +142,8 @@ export const projectData: Project[] = [
       "Tailwind CSS",
       "React Hooks"
     ],
-    category: "frontend"
+    category: "frontend",
+    githubUrl: "https://github.com/jusish/Quizy"
   },
 
   // === DESIGN ===
@@ -152,7 +157,9 @@ export const projectData: Project[] = [
       src: "/videos/e-ubaka.mp4"
     },
     technologies: ["Figma", "React", "React Query", "Zustand", "Tailwind CSS"],
-    category: "design"
+    category: "design",
+    liveUrl:
+      "https://www.figma.com/design/1oYJsR0gEs0McLq3BdpRvw/E-UBAKA-%F0%9F%8F%9B%EF%B8%8F%F0%9F%91%B7%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%8F%AD?m=auto&t=u9k54qm1urJ3fmKd-6"
   },
   {
     id: "projexess-09",
@@ -164,7 +171,9 @@ export const projectData: Project[] = [
       src: "/videos/projexess.mp4"
     },
     technologies: ["Figma", "Adobe Illustrator"],
-    category: "design"
+    category: "design",
+    liveUrl:
+      "https://www.figma.com/design/yTcddqeE6tAfrUgLnPpMwb/Projexess?m=auto&t=u9k54qm1urJ3fmKd-6"
   },
   {
     id: "stocker-10",
@@ -182,7 +191,9 @@ export const projectData: Project[] = [
       "Shadcn UI",
       "Tailwind CSS"
     ],
-    category: "design"
+    category: "design",
+    liveUrl:
+      "https://www.figma.com/design/mlqkUVuEJ0ZlShOYeOTrLa/Stock-System?m=auto&t=u9k54qm1urJ3fmKd-6"
   },
   // === FULLSTACK ===
   {
@@ -208,6 +219,7 @@ export const projectData: Project[] = [
       "Zod",
       "Swagger"
     ],
-    category: "fullstack"
+    category: "fullstack",
+    liveUrl: "https://bankupp.netlify.app/overview"
   }
 ];
