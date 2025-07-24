@@ -23,7 +23,7 @@ export const projectData: Project[] = [
       "API for managing parking slot bookings, availability, and secure access using JWT. Built with clean architecture and Prisma ORM.",
     media: {
       type: "video",
-      src: "/videos/smartpark.mp4"
+      src: "/assets/videos/smartpark.mp4"
     },
     technologies: [
       "Node.js",
@@ -43,7 +43,7 @@ export const projectData: Project[] = [
       "Automates salary processing for employees, sends notifications via email, and offers admin control with JWT-secured endpoints.",
     media: {
       type: "video",
-      src: "/videos/payrollx.mp4"
+      src: "/assets/videos/payrollx.mp4"
     },
     technologies: [
       "Java",
@@ -63,7 +63,7 @@ export const projectData: Project[] = [
       "Prepaid electricity token generator designed for EUCL clients. Handles secure token creation using Java Spring Boot.",
     media: {
       type: "video",
-      src: "/videos/eucl-prepaid.mp4"
+      src: "/assets/videos/eucl-prepaid.mp4"
     },
     technologies: ["Java", "Spring Boot", "PostgreSQL", "JWT", "Swagger"],
     category: "backend",
@@ -76,7 +76,7 @@ export const projectData: Project[] = [
       "Schedules reminders with support for repeat patterns and sends notifications via email. Lightweight and easy to use.",
     media: {
       type: "video",
-      src: "../../public/assets/videos/reminderr.mp4"
+      src: "/assets/videos/reminderr.mp4"
     },
     githubUrl: "https://github.com/jusish/remindrr-backend",
     technologies: [
@@ -96,7 +96,7 @@ export const projectData: Project[] = [
       "CRUD API for user recipes built with NestJS and Prisma. Handles user authentication and recipe management.",
     media: {
       type: "video",
-      src: "/videos/recipenest.mp4"
+      src: "/assets/videos/recipenest.mp4"
     },
     githubUrl: "https://github.com/jusish/recipe-nestjs",
     technologies: [
@@ -118,7 +118,7 @@ export const projectData: Project[] = [
       "Task management app that lets you track task urgency, set personal challenges, and monitor progress visually.",
     media: {
       type: "video",
-      src: "/videos/itasks.mp4"
+      src: "/assets/videos/itasks.mp4"
     },
     liveUrl: "https://i-tasks-murex.vercel.app/",
     technologies: ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Zustand"],
@@ -132,7 +132,7 @@ export const projectData: Project[] = [
       "Interactive quiz app using Trivia API. Users can choose categories and difficulty, and test their knowledge in real-time.",
     media: {
       type: "video",
-      src: "/videos/quizy.mp4"
+      src: "/assets/videos/quizy.mp4"
     },
     liveUrl: "https://jusish-quizy.vercel.app/",
     technologies: [
@@ -154,7 +154,7 @@ export const projectData: Project[] = [
       "Construction site management system design — for owners, engineers, and storekeepers. Includes UI design and React-based frontend.",
     media: {
       type: "video",
-      src: "/videos/e-ubaka.mp4"
+      src: "/assets/videos/e-ubaka.mp4"
     },
     technologies: ["Figma", "React", "React Query", "Zustand", "Tailwind CSS"],
     category: "design",
@@ -168,7 +168,7 @@ export const projectData: Project[] = [
       "Minimal and clean UI design system for a project management software. Created using grids, icons, and branded illustrations.",
     media: {
       type: "video",
-      src: "/videos/projexess.mp4"
+      src: "/assets/videos/projexess.mp4"
     },
     technologies: ["Figma", "Adobe Illustrator"],
     category: "design",
@@ -182,7 +182,7 @@ export const projectData: Project[] = [
       "Stock management system UI and frontend, built with Shadcn UI and Next.js. Designed for simplicity and business clarity.",
     media: {
       type: "video",
-      src: "/videos/stocker.mp4"
+      src: "/assets/videos/stocker.mp4"
     },
     technologies: [
       "Figma",
@@ -203,7 +203,7 @@ export const projectData: Project[] = [
       "A digital banking management system with features like loan handling, top-ups, liquidation, analytics, and PDF report generation.",
     media: {
       type: "video",
-      src: "/videos/bankup.mp4"
+      src: "/assets/videos/bankup.mp4"
     },
     technologies: [
       "Next.js",
