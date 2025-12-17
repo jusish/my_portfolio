@@ -1,6 +1,5 @@
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import ScrollButtons from "@/components/ScrollingUpButton";
@@ -12,12 +11,11 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <html lang="en">
-        <body>
+      <html lang="en" className="dark">
+        <body className="dark" suppressHydrationWarning>
           <Header />
           <ScrollButtons />
           {children}
-          <Footer />
           <SpeedInsights />
           <Analytics />
         </body>

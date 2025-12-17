@@ -1,210 +1,69 @@
 // projectData.ts
+export type ProjectCategory =
+  | "frontend"
+  | "backend"
+  | "fullstack"
+  | "design"
+  | "testing"
+  | "devops";
+
 export interface Project {
   id: string;
   title: string;
   description: string;
-  media: {
-    type: "image" | "video";
-    src: string;
-    poster?: string; // Thumbnail for video
-  };
   githubUrl?: string;
   liveUrl?: string;
   technologies: string[];
-  category: "frontend" | "backend" | "fullstack" | "design";
+  /**
+   * One project can appear in multiple categories.
+   * Example: both "frontend" and "design" if you did UI + frontend.
+   */
+  categories: ProjectCategory[];
 }
 
 export const projectData: Project[] = [
-  // === BACKEND ===
+  // === FULLSTACK ===
   {
-    id: "parking-01",
-    title: "SmartPark API",
+    id: "vistally-01",
+    title: "Vistally — Property Management Platform",
     description:
-      "API for managing parking slot bookings, availability, and secure access using JWT. Built with clean architecture and Prisma ORM.",
-    media: {
-      type: "video",
-      src: "/assets/videos/smartpark.mp4"
-    },
+      "Complete property management SaaS platform (v1 launched, v2 in progress). Features include property listing & administration, tenant portals, expense & ledger management, payment integrations, SMS & email notifications, and scalable multi-tenant architecture. Full-stack development including frontend, backend, infrastructure & CI/CD.",
     technologies: [
       "Node.js",
-      "Express",
-      "Prisma",
-      "PostgreSQL",
-      "JWT",
-      "Swagger"
-    ],
-    category: "backend",
-    githubUrl: "https://github.com/jusish/car-parking-backend"
-  },
-  {
-    id: "payroll-02",
-    title: "PayrollX",
-    description:
-      "Automates salary processing for employees, sends notifications via email, and offers admin control with JWT-secured endpoints.",
-    media: {
-      type: "video",
-      src: "/assets/videos/payrollx.mp4"
-    },
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "PostgreSQL",
-      "JWT",
-      "Spring Mail",
-      "Swagger"
-    ],
-    category: "backend",
-    githubUrl: "https://github.com/jusish/Employee-Payroll-Management"
-  },
-  {
-    id: "eucl-03",
-    title: "EUCL Token Service",
-    description:
-      "Prepaid electricity token generator designed for EUCL clients. Handles secure token creation using Java Spring Boot.",
-    media: {
-      type: "video",
-      src: "/assets/videos/eucl-prepaid.mp4"
-    },
-    technologies: ["Java", "Spring Boot", "PostgreSQL", "JWT", "Swagger"],
-    category: "backend",
-    githubUrl: "https://github.com/jusish/eucl"
-  },
-  {
-    id: "reminderr-04",
-    title: "Reminderr API",
-    description:
-      "Schedules reminders with support for repeat patterns and sends notifications via email. Lightweight and easy to use.",
-    media: {
-      type: "video",
-      src: "/assets/videos/reminderr.mp4"
-    },
-    githubUrl: "https://github.com/jusish/remindrr-backend",
-    technologies: [
-      "Node.js",
-      "Express",
-      "JWT",
-      "PostgreSQL",
-      "Nodemailer",
-      "Cron Jobs"
-    ],
-    category: "backend"
-  },
-  {
-    id: "recipe-nest-05",
-    title: "RecipeNest API",
-    description:
-      "CRUD API for user recipes built with NestJS and Prisma. Handles user authentication and recipe management.",
-    media: {
-      type: "video",
-      src: "/assets/videos/recipenest.mp4"
-    },
-    githubUrl: "https://github.com/jusish/recipe-nestjs",
-    technologies: [
-      "NestJS",
       "TypeScript",
-      "PostgreSQL",
-      "Prisma",
-      "JWT",
-      "Swagger"
-    ],
-    category: "backend"
-  },
-
-  // === FRONTEND ===
-  {
-    id: "itasks-06",
-    title: "iTasks",
-    description:
-      "Task management app that lets you track task urgency, set personal challenges, and monitor progress visually.",
-    media: {
-      type: "video",
-      src: "/assets/videos/itasks.mp4"
-    },
-    liveUrl: "https://i-tasks-murex.vercel.app/",
-    technologies: ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Zustand"],
-    category: "frontend",
-    githubUrl: "https://github.com/jusish/iTasks"
-  },
-  {
-    id: "quizy-07",
-    title: "Quizy",
-    description:
-      "Interactive quiz app using Trivia API. Users can choose categories and difficulty, and test their knowledge in real-time.",
-    media: {
-      type: "video",
-      src: "/assets/videos/quizy.mp4"
-    },
-    liveUrl: "https://jusish-quizy.vercel.app/",
-    technologies: [
+      "React",
       "Next.js",
-      "TypeScript",
-      "Trivia API",
-      "Tailwind CSS",
-      "React Hooks"
+      "PostgreSQL",
+      "MongoDB",
+      "Docker",
+      "GitHub Actions",
+      "CI/CD",
     ],
-    category: "frontend",
-    githubUrl: "https://github.com/jusish/Quizy"
-  },
-
-  // === DESIGN ===
-  {
-    id: "e-ubaka-08",
-    title: "E-Ubaka UI & Frontend",
-    description:
-      "Construction site management system design — for owners, engineers, and storekeepers. Includes UI design and React-based frontend.",
-    media: {
-      type: "video",
-      src: "/assets/videos/e-ubaka.mp4"
-    },
-    technologies: ["Figma", "React", "React Query", "Zustand", "Tailwind CSS"],
-    category: "design",
-    liveUrl:
-      "https://www.figma.com/design/1oYJsR0gEs0McLq3BdpRvw/E-UBAKA-%F0%9F%8F%9B%EF%B8%8F%F0%9F%91%B7%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%8F%AD?m=auto&t=u9k54qm1urJ3fmKd-6"
+    categories: ["fullstack", "devops"],
+    liveUrl: "https://arksoft.rw/",
   },
   {
-    id: "projexess-09",
-    title: "Projexess UI Kit",
+    id: "dealuz-02",
+    title: "Dealuz — Inventory & Stock Management",
     description:
-      "Minimal and clean UI design system for a project management software. Created using grids, icons, and branded illustrations.",
-    media: {
-      type: "video",
-      src: "/assets/videos/projexess.mp4"
-    },
-    technologies: ["Figma", "Adobe Illustrator"],
-    category: "design",
-    liveUrl:
-      "https://www.figma.com/design/yTcddqeE6tAfrUgLnPpMwb/Projexess?m=auto&t=u9k54qm1urJ3fmKd-6"
-  },
-  {
-    id: "stocker-10",
-    title: "Stocker App UI",
-    description:
-      "Stock management system UI and frontend, built with Shadcn UI and Next.js. Designed for simplicity and business clarity.",
-    media: {
-      type: "video",
-      src: "/assets/videos/stocker.mp4"
-    },
+      "Full-featured inventory and stock management system with real-time tracking, supplier management, advanced analytics, multi-location warehouse support, automated alerts, and purchase & sales tracking. Designed for simplicity and business clarity.",
     technologies: [
-      "Figma",
       "Next.js",
       "TypeScript",
       "Shadcn UI",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
     ],
-    category: "design",
-    liveUrl:
-      "https://www.figma.com/design/mlqkUVuEJ0ZlShOYeOTrLa/Stock-System?m=auto&t=u9k54qm1urJ3fmKd-6"
+    categories: ["fullstack", "design"],
+    liveUrl: "https://dealuz.com",
   },
-  // === FULLSTACK ===
   {
-    id: "bankup-11",
-    title: "Bankup",
+    id: "bankup-03",
+    title: "Bankup — Digital Banking Management",
     description:
-      "A digital banking management system with features like loan handling, top-ups, liquidation, analytics, and PDF report generation.",
-    media: {
-      type: "video",
-      src: "/assets/videos/bankup.mp4"
-    },
+      "A digital banking management system with features like loan handling, top-ups, liquidation, analytics, and PDF report generation. Full-stack application with secure authentication and comprehensive financial management tools.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -217,9 +76,224 @@ export const projectData: Project[] = [
       "PostgreSQL",
       "JWT",
       "Zod",
-      "Swagger"
+      "Swagger",
     ],
-    category: "fullstack",
-    liveUrl: "https://bankupp.netlify.app/overview"
-  }
+    categories: ["fullstack"],
+    liveUrl: "https://bankupp.netlify.app/",
+  },
+  {
+    id: "hospital-04",
+    title: "Hospital Management System",
+    description:
+      "Comprehensive hospital management system with patient records, billing, inventory management, medical records, and ML-assisted trend analytics dashboard. Built with multi-module architecture and secure handling of sensitive healthcare data.",
+    technologies: [
+      "Django",
+      "Python",
+      "PostgreSQL",
+      "Machine Learning",
+      "Data Analytics",
+    ],
+    categories: ["fullstack"],
+    githubUrl: "https://github.com/jusish/clinic_system",
+  },
+  {
+    id: "gate-management-05",
+    title: "Gate Management & Vehicle Access Control",
+    description:
+      "Real-world gate management system combining AI, hardware, and backend logic. Features license plate detection using YOLOv8, OCR pipelines, Arduino integration, entry & exit validation, time-based access control, payment status verification, and unauthorized access logging.",
+    technologies: [
+      "YOLOv8",
+      "OCR",
+      "Arduino",
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Computer Vision",
+      "Hardware Integration",
+    ],
+    categories: ["fullstack", "backend"],
+    githubUrl: "https://github.com/jusish/pms",
+  },
+  {
+    id: "library-06",
+    title: "Library Management System",
+    description:
+      "Complete library management system with user roles, book tracking, inventory management, authentication, and user profile management. Features advanced data tables with filtering, pagination, sorting, and data visualization.",
+    technologies: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "TanStack Table",
+    ],
+    categories: ["fullstack"],
+    githubUrl: "https://github.com/jusish/Librarian",
+  },
+  {
+    id: "e-ubaka-07",
+    title: "E-Ubaka — Construction Management",
+    description:
+      "Construction site management system design and frontend implementation for owners, engineers, and storekeepers. Includes UI design, React-based frontend, and comprehensive project tracking features.",
+    technologies: ["Figma", "React", "React Query", "Zustand", "Tailwind CSS"],
+    categories: ["design", "frontend"],
+    liveUrl: "https://ubaka.site",
+  },
+  {
+    id: "alliance-08",
+    title: "Alliance Investment — Corporate Website",
+    description:
+      "Professional corporate website for real estate investment firm showcasing company profile and services. Features modern responsive design, SEO optimizations, fast load times, and strong branding.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "SEO"],
+    categories: ["frontend", "design"],
+    liveUrl: "https://allianceinvestment.rw/",
+  },
+  {
+    id: "expense-tracker-09",
+    title: "Mobile Expense Tracker App",
+    description:
+      "Cross-platform mobile expense tracking application with authentication flows, tab navigation, expense filtering & sorting, and offline-friendly data fetching patterns. Clean, modern UI built with React Native and Expo.",
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "TanStack Query",
+      "NativeWind",
+    ],
+    categories: ["frontend"],
+    githubUrl: "https://github.com/jusish/Expense-Tracker",
+  },
+
+  // === BACKEND ===
+  {
+    id: "reminderr-10",
+    title: "Remindrr API",
+    description:
+      "Scheduling system with support for repeat patterns and email notifications. Lightweight and easy to use with scalable backend architecture. Designed as a learning-driven but production-minded project.",
+    githubUrl: "https://github.com/jusish/remindrr-backend",
+    technologies: [
+      "Node.js",
+      "TypeScript",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Nodemailer",
+      "Cron Jobs",
+    ],
+    categories: ["backend"],
+  },
+  {
+    id: "parking-11",
+    title: "SmartPark API",
+    description:
+      "API for managing parking slot bookings, availability, and secure access using JWT. Built with clean architecture and Prisma ORM.",
+    technologies: [
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "Swagger",
+    ],
+    categories: ["backend"],
+    githubUrl: "https://github.com/jusish/car-parking-backend",
+  },
+  {
+    id: "payroll-12",
+    title: "PayrollX",
+    description:
+      "Automates salary processing for employees, sends notifications via email, and offers admin control with JWT-secured endpoints.",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "JWT",
+      "Spring Mail",
+      "Swagger",
+    ],
+    categories: ["backend"],
+    githubUrl: "https://github.com/jusish/Employee-Payroll-Management",
+  },
+  {
+    id: "eucl-13",
+    title: "EUCL Token Service",
+    description:
+      "Prepaid electricity token generator designed for EUCL clients. Handles secure token creation using Java Spring Boot.",
+    technologies: ["Java", "Spring Boot", "PostgreSQL", "JWT", "Swagger"],
+    categories: ["backend"],
+    githubUrl: "https://github.com/jusish/eucl",
+  },
+  {
+    id: "recipe-nest-14",
+    title: "RecipeNest API",
+    description:
+      "CRUD API for user recipes built with NestJS and Prisma. Handles user authentication and recipe management.",
+    githubUrl: "https://github.com/jusish/recipe-nestjs",
+    technologies: [
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "JWT",
+      "Swagger",
+    ],
+    categories: ["backend"],
+  },
+
+  // === FRONTEND ===
+  {
+    id: "itasks-15",
+    title: "iTasks",
+    description:
+      "Task management app that lets you track task urgency, set personal challenges, and monitor progress visually.",
+    liveUrl: "https://i-tasks-murex.vercel.app/",
+    technologies: ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Zustand"],
+    categories: ["frontend"],
+    githubUrl: "https://github.com/jusish/iTasks",
+  },
+  {
+    id: "quizy-16",
+    title: "Quizy",
+    description:
+      "Interactive quiz app using Trivia API. Users can choose categories and difficulty, and test their knowledge in real-time.",
+    liveUrl: "https://jusish-quizy.vercel.app/",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Trivia API",
+      "Tailwind CSS",
+      "React Hooks",
+    ],
+    categories: ["frontend"],
+    githubUrl: "https://github.com/jusish/Quizy",
+  },
+
+  // === DESIGN ===
+  {
+    id: "projexess-17",
+    title: "Projexess UI Kit",
+    description:
+      "Minimal and clean UI design system for a project management software. Created using grids, icons, and branded illustrations.",
+    technologies: ["Figma", "Adobe Illustrator"],
+    categories: ["design"],
+    liveUrl:
+      "https://www.figma.com/design/yTcddqeE6tAfrUgLnPpMwb/Projexess?m=auto&t=u9k54qm1urJ3fmKd-6",
+  },
+  {
+    id: "stocker-18",
+    title: "Stocker App UI",
+    description:
+      "Stock management system UI and frontend, built with Shadcn UI and Next.js. Designed for simplicity and business clarity.",
+    technologies: [
+      "Figma",
+      "Next.js",
+      "TypeScript",
+      "Shadcn UI",
+      "Tailwind CSS",
+    ],
+    categories: ["design", "frontend"],
+    liveUrl:
+      "https://www.figma.com/design/mlqkUVuEJ0ZlShOYeOTrLa/Stock-System?m=auto&t=u9k54qm1urJ3fmKd-6",
+  },
 ];

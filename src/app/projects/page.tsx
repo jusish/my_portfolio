@@ -35,18 +35,20 @@ export const metadata: Metadata = {
 
 const Projects = () => {
   return (
-    <main className="flex-none h-auto px-4 md:px-8 lg:px-28 relative w-[100%] m-auto">
-      <section className="py-20">
-        <h1 className="text-4xl lg:text-8xl md:text-6xl font-bold text-gray-800">
-          My<span className="text-purple-600">Best</span>
-          Creations
-        </h1>
-        <p className="mt-8 text-gray-800 text-xl lg:text-2xl px-2 border-l-4 lg:border-l-8 border-purple-600">
-          Designing and Developing Robust and Stylish Web Applications for a
-          Decade and Counting
-        </p>
-      </section>
-      <MyProjects />
+    <main className="flex-none h-auto px-4 md:px-8 lg:pl-32 lg:pr-8 relative w-full m-auto pt-24 lg:pt-8">
+      <div className="max-w-7xl mx-auto">
+        <section className="py-10">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            My<span className="text-purple-500">Best</span>
+            Creations
+          </h1>
+          <p className="text-gray-300 text-base md:text-lg lg:text-xl border-l-4 lg:border-l-8 border-purple-600 pl-4 lg:pl-6 mb-10">
+            Designing and Developing Robust and Stylish Web Applications for a
+            Decade and Counting
+          </p>
+        </section>
+        <MyProjects />
+      </div>
     </main>
   );
 };

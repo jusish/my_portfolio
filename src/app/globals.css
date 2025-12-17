@@ -1,9 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
-    --radius: 0.5rem
+    --radius: 0.5rem;
+  }
+  
+  .dark {
+    --background: 10 10 10;
+    --foreground: 229 231 235;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-[#0a0a0a] via-[#1a0a2e] to-[#0a0a0a] text-gray-200;
+    min-height: 100vh;
+  }
+  
+  html {
+    @apply dark;
+    scroll-behavior: smooth;
+  }
+}
+
+@media print {
+  /* Hide header and navigation when printing */
+  header:not(.header-section),
+  nav,
+  aside,
+  .no-print {
+    display: none !important;
+  }
+  
+  /* Ensure documents are white background when printing */
+  html, body {
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Remove shadows and borders from containers */
+  main,
+  div[class*="container"] {
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  /* Preserve all colors and backgrounds when printing */
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
   }
 }
 
