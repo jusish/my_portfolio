@@ -10,6 +10,21 @@ export interface WorkExperience {
 
 export const experienceData: WorkExperience[] = [
   {
+    id: "exp-0",
+    company: "Avada Technologies Limited (Avadapay)",
+    position: "Product Officer",
+    years: "Feb 2026 - Present",
+    location: "Kigali, Rwanda",
+    description:
+      "Working as a Product Officer at Avada Technologies Limited, a global fintech company, managing and optimizing their core product, Avadapay.",
+    achievements: [
+      "Driving product strategy and feature prioritization for the Avadapay fintech platform.",
+      "Collaborating with engineering and design teams to deliver high-quality financial products.",
+      "Analyzing market trends and user feedback to enhance product market fit in the global fintech space.",
+      "Contributing to the development of scalable payment solutions and financial services.",
+    ],
+  },
+  {
     id: "exp-1",
     company: "Arksoft Rwanda",
     position: "Full-Stack Developer",

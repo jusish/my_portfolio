@@ -41,7 +41,7 @@ const Footer = () => {
         {/* Copyright */}
         <section className="flex flex-col justify-center items-center md:items-end">
           <h3 className="text-sm md:text-base text-gray-400 text-end">
-            ©2025 All Rights Reserved.
+            ©2026 All Rights Reserved.
             <br />
             Made with Passion by Jusish
           </h3>

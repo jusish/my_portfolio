@@ -6,34 +6,33 @@ import ScrollAnimatedSection from "@/components/ScrollAnimatedSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Justin | Fullstack Developer & UI Designer Portfolio",
+  title: "Justin | Product Officer & Full Stack Developer",
   description:
-    "Fullstack and mobile developer from Rwanda with expertise in React, Next.js, TypeScript, Node.js, Spring Boot, and design systems. Passionate about building fast, user-friendly apps and systems that solve real problems.",
+    "Product Officer and Full Stack Developer from Rwanda with expertise in product strategy, React, Next.js, TypeScript, and fintech solutions. Passionate about building global products like Avadapay and Vistally.",
   keywords: [
+    "Product Officer",
     "Fullstack Developer",
     "Next.js Developer",
-    "React Native Developer",
-    "Node.js Developer",
-    "Spring Boot Developer",
+    "Fintech",
     "Rwanda Developer",
     "UI Designer",
-    "Mobile Developer",
     "TypeScript",
     "React",
-    "Backend Developer",
+    "Avadapay",
+    "Vistally",
   ],
   robots: "index, follow",
   openGraph: {
     images: "https://i.ibb.co/CK5dKs62/Screenshot-2025-03-29-135543.webp",
-    title: "Justin | Fullstack Developer & UI Designer Portfolio",
+    title: "Justin | Product Officer & Full Stack Developer",
     description:
-      "Fullstack and mobile developer from Rwanda with expertise in React, Next.js, TypeScript, Node.js, Spring Boot, and design systems. Passionate about building fast, user-friendly apps and systems that solve real problems.",
+      "Product Officer and Full Stack Developer from Rwanda with expertise in product strategy, React, Next.js, TypeScript, and fintech solutions.",
   },
   twitter: {
     images: "https://i.ibb.co/CK5dKs62/Screenshot-2025-03-29-135543.webp",
-    title: "Justin | Fullstack Developer & UI Designer Portfolio",
+    title: "Justin | Product Officer & Full Stack Developer",
     description:
-      "Fullstack and mobile developer from Rwanda with expertise in React, Next.js, TypeScript, Node.js, Spring Boot, and design systems. Passionate about building fast, user-friendly apps and systems that solve real problems.",
+      "Product Officer and Full Stack Developer from Rwanda with expertise in product strategy, React, Next.js, TypeScript, and fintech solutions.",
   },
   viewport: "width=device-width, initial-scale=1.0",
   themeColor: "#1a0a2e",

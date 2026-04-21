@@ -131,7 +131,7 @@ const AnimatedHero = () => {
                     backgroundSize: "200% 200%",
                   }}
                 >
-                  & Designer
+                  & Product Officer
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{
@@ -154,14 +154,14 @@ const AnimatedHero = () => {
             >
               I build{" "}
               <span className="text-purple-400 font-semibold">
-                clean, functional
+                user-centric fintech
               </span>{" "}
-              systems and{" "}
+              solutions and{" "}
               <span className="text-purple-400 font-semibold">
-                user-friendly
+                scalable enterprise
               </span>{" "}
-              applications using modern technologies. Passionate about creating
-              solutions that solve real problems.
+              systems. Passionate about product strategy and creating impactful
+              global platforms.
             </motion.p>
 
             {/* Stats */}

@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Justin Ishimwe",
-  title: "Full Stack Developer & UI Designer",
+  title: "Product Officer & Full Stack Developer",
   email: "ishimwejustin67@gmail.com",
   phone: "+250787415913",
   location: "Kigali, Rwanda",
@@ -10,5 +10,5 @@ export const personalInfo = {
   twitter: "https://x.com/ishimwejustin67",
   instagram: "https://www.instagram.com/jusish_/",
   summary:
-    "Passionate Full Stack Developer with expertise in building scalable web applications, mobile apps, and enterprise systems. Specialized in React, Next.js, Node.js, Spring Boot, and modern DevOps practices. Proven track record of delivering production-ready solutions from concept to deployment.",
+    "Product Officer and Full Stack Developer with a strong foundation in building scalable enterprise systems. Expertise in product strategy, web development (React, Next.js, Node.js), and modern DevOps. Proven track record of delivering user-centric fintech solutions and enterprise platforms like Avadapay and Vistally.",
 };
